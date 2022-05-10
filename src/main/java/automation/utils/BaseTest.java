@@ -12,7 +12,7 @@ import org.testng.annotations.Parameters;
 public class BaseTest extends BrowserConfiguration {
     @BeforeMethod
     @Parameters({"browser"})
-    public void setup(@Optional("chrome") String browserName) {
+    public void setup(@Optional("firefox") String browserName) {
         setupBrowser(browserName);
     }
 
